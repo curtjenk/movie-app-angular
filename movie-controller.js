@@ -7,15 +7,18 @@ movieApp.controller('movieController', function($scope, $http) {
 
     var URL = baseURL + methodNowPlaying + '?' + apiKey;
 
-    $scope.imagesArr = [];
+    // $scope.imagesArr = [];
+    $scope.imageURL = 'http://image.tmdb.org/t/p/w300';
+    $scope.dataResults = [];
     
     $http.get(URL).success(function(data) {
 
         console.log(data);
-        for (i = 0; i < data.results.length; i++) {
+        $scope.dataResults = data.results;
+        // for (i = 0; i < data.results.length; i++) {
 
-            $scope.imagesArr.push('http://image.tmdb.org/t/p/w300' + data.results[i].poster_path);
-        }
+        //     $scope.imagesArr.push('http://image.tmdb.org/t/p/w300' + data.results[i].poster_path);
+        // }
     });
 
 });

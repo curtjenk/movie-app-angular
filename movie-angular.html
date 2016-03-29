@@ -13,9 +13,12 @@
 <body ng-controller="movieController">
     <div class="container">
         <div id='poster-grid'>
-            <div class="col-md-2 col-sm-2 now-playing" ng-repeat="s in imagesArr">
-                <img ng-src={{s}}>
+            <div class="col-md-2 col-sm-2 now-playing" ng-repeat="s in dataResults">
+                <img ng-src={{imageURL}}{{s.poster_path}}>
             </div>
+           <!--  <div class="col-md-2 col-sm-2 now-playing" ng-repeat="s in imagesArr">
+                <img ng-src={{s}}>
+            </div> -->
         </div>
     </div>
 </body>
