@@ -1,0 +1,21 @@
+/* line 3, ../compass/sass/style.scss */
+#poster-grid {
+  border-radius: 5px;
+}
+/* line 6, ../compass/sass/style.scss */
+#poster-grid img {
+  width: auto;
+  height: 221px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+/* line 14, ../compass/sass/style.scss */
+.indent {
+  padding: 0 20px;
+}
+
+/* line 18, ../compass/sass/style.scss */
+.now-playing {
+  width: 16%;
+}
